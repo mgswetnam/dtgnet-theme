@@ -1,0 +1,64 @@
+body{
+  .fl-page{
+    .fl-page-content{
+      .fl-content{
+        article{
+          &.coupon{
+            border:2px solid $black_75;
+            padding: 15px;
+            border-radius: 10px;
+            .csa_coupon_print{
+              &.navbar{
+                display: block;
+                .back_link{
+                  display: inline-block;
+                  width: 49%;
+                }
+                .print_coupon{
+                  display: inline-block;
+                  width: 49%;
+                  text-align: right;
+                  .print_coupon_link{
+                    cursor: pointer;
+                    .print_icon{
+                      &:before{
+                        @include fa;
+                        content:"\f02f";
+                      }
+                    }
+                    .print_text{
+
+                    }
+                  }
+                }
+                @media print {
+                  display: none;
+                }
+              }
+              &.logo{
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+              }
+              &.title{
+                text-align: center;
+                .title_text{
+                  .post-edit-link{
+                    @media print {
+                      display: none;
+                    }
+                  }
+                }
+              }
+              &.disclaimer{
+                font-size: 8pt;
+                padding-top: 20px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

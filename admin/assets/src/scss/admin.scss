@@ -1,0 +1,24 @@
+body{
+  .csa-admin{
+    &.csa-featured-link{
+      padding:5px;
+      margin:5px 0px 5px 0px;
+      border:1px solid #000000;
+      .csa-remove-link,.csa-up-link,.csa-down-link{
+        padding: 0px 5px;
+        cursor: pointer;
+      }
+    }
+    &.button-bar{
+      width: 100%;
+      margin:5px 0px 5px 0px;
+      .csa-featured-links{
+        &.form-button{
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

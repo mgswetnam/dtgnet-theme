@@ -1,0 +1,29 @@
+{
+  "name": "Castor Canadensis [ZZZ]",
+  "description": "Beaver Builder child theme for Cornerstone Advertising",
+  "type":"wordpress-theme",
+  "minimum-stability" : "stable",
+  "authors": [
+      {
+          "name": "Matthew Swetnam",
+          "email": "matts@cornerstonead.com"
+      }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+  	"installer-paths": {
+      "../../plugins/{$name}/": [
+        "wpackagist-plugin/*",
+        "type:wordpress-plugin"
+      ]
+  	}
+	},
+  "require": {
+	  "wpackagist-plugin/timber-library": "0.22.*"
+  }
+}
